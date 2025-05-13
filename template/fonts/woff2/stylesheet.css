@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Heavy Italic'), local('AmazonEmber-HeavyItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-HeavyItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Heavy'), local('AmazonEmber-Heavy'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Medium Italic'), local('AmazonEmber-MediumItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Thin Italic'), local('AmazonEmber-ThinItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Thin'), local('AmazonEmber-Thin'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Italic'), local('AmazonEmber-Italic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Light Italic'), local('AmazonEmber-LightItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Medium'), local('AmazonEmber-Medium'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember'), local('AmazonEmber-Regular'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Light'), local('AmazonEmber-Light'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Bold'), local('AmazonEmber-Bold'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Bold Italic'), local('AmazonEmber-BoldItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Heavy'), local('AmazonEmber-Heavy'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Heavy Italic'), local('AmazonEmber-HeavyItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-HeavyItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Medium Italic'), local('AmazonEmber-MediumItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Medium'), local('AmazonEmber-Medium'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Thin Italic'), local('AmazonEmber-ThinItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember'), local('AmazonEmber-Regular'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Thin'), local('AmazonEmber-Thin'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Italic'), local('AmazonEmber-Italic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Light Italic'), local('AmazonEmber-LightItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Bold Italic'), local('AmazonEmber-BoldItalic'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Bold'), local('AmazonEmber-Bold'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: local('Amazon Ember Light'), local('AmazonEmber-Light'),
+        url('http://localhost:8888/Amazon-Email-System/Cerberus-Template/fonts/woff2/hinted-subset-AmazonEmber-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
