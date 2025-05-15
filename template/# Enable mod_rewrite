@@ -1,8 +1,0 @@
-# Enable mod_rewrite
-RewriteEngine On
-RewriteBase /
-
-# Redirect assets from the old location to the new one
-# This rule captures any file requested from /Amazon-Email-System/template/images/
-# and appends the filename to /azem/template/ in the redirect.
-RewriteRule ^Amazon-Email-System/(.*)$ /azem/$1 [R=301,L]

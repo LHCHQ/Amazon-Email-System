@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Ember Modern Display Standard';
+    src: url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Bold.eot');
+    src: local('Ember Modern Display Standard Bold'), local('EmberModernDisplayStd-Bold'),
+        url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Bold.woff') format('woff'),
+        url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ember Modern Display Standard';
+    src: url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Reg.eot');
+    src: local('Ember Modern Display Standard Regular'), local('EmberModernDisplayStd-Reg'),
+        url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Reg.eot?#iefix') format('embedded-opentype'),
+        url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Reg.woff') format('woff'),
+        url('https://ejim.li/azem/template/fonts/hinted-EmberModernDisplayStd-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
