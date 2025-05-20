@@ -237,6 +237,7 @@
 
 		/* Media Queries */
 		@media screen and (max-width: 600px) {
+
 			.footer,
 			.email-container {
 				width: 100% !important;
@@ -274,9 +275,11 @@
 			table.center-on-narrow {
 				display: inline-block !important;
 			}
+
 			.hide-on-narrow {
 				opacity: 0 !important;
 			}
+
 			/* What it does: Adjust typography on small screens to improve readability */
 			.email-container p {
 				font-size: 17px !important;
@@ -307,6 +310,11 @@
 				background: #ffffff !important;
 			}
 
+
+
+			.darkmode-bg-with-image {
+				background-color: #0F141A !important;
+			}
 			h1,
 			h2,
 			h3,
@@ -416,8 +424,8 @@
 			<!-- Hero with Background Image : BEGIN -->
 			<tr>
 				<!-- Bulletproof Background Images c/o https://backgrounds.cm -->
-				<td valign="top"
-					style="text-align: center; background-image: url('https://ejim.li/azem/template/images/header-photo-sm.png'); background-position: center center !important; background-size: cover !important; height: 640px; min-height: 640px; max-height: 640px;">
+				<td valign="top" class="darkmode-bg-with-image"
+					style="text-align: center; background-image: url('https://ejim.li/azem/template/images/header-photo-sm.png'); background-position: center center !important; background-size: cover !important; height: 640px; min-height: 640px; max-height: 640px; background-color: #ffffff;">
 					<!--[if gte mso 9]>
 	                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:640px; background-position: center center !important;">
 	                <v:fill type="tile" src="https://ejim.li/azem/template/images/header-photo-sm.jpg" color="#0F141A" />
@@ -436,7 +444,8 @@
 												<table role="presentation" cellspacing="0" cellpadding="0"
 													border="0" width="100%">
 													<tr>
-														<td style="padding: 30px 0px; text-align: left" class="stack-column center-on-narrow">
+														<td style="padding: 30px 0px; text-align: left"
+															class="stack-column center-on-narrow">
 															<img src="https://ejim.li/azem/template/images/header-logo-bwp-white.png"
 																width="132" height="32" alt="alt_text"
 																border="0"
@@ -547,10 +556,21 @@
 				</td>
 			</tr>
 			<!-- Email Hero Image  : END -->
+			<!-- White Spacer : BEGIN -->
+			<tr>
+				<td aria-hidden="true" height="40"
+					style="font-size: 0px; line-height: 0px; background-color: #ffffff;" class="darkmode-bg">
+					&nbsp;
+				</td>
+			</tr>
+			<!-- White Spacer : END -->
+
+
 			<!-- 1 Column Text + Button Centered: BEGIN -->
 			<tr>
 				<td style="background-color: #ffffff;" class="darkmode-bg">
-					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; max-width: 520px;">
+					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+						style="width: 100%; max-width: 520px;">
 						<tr>
 							<td align="center"
 								style="padding: 20px 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 21px; color: #0F141A; text-align: center;"
@@ -668,7 +688,8 @@
 			<!-- 1 Column Text + Button Centered: BEGIN -->
 			<tr>
 				<td style="background-color: #ffffff;" class="darkmode-bg">
-					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; max-width: 520px;">
+					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+						style="width: 100%; max-width: 520px;">
 						<tr>
 							<td align="center"
 								style="padding: 20px 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 21px; color: #0F141A; text-align: center;"
@@ -889,7 +910,8 @@
 									width="100%">
 									<tr>
 										<td style="padding: 0px; text-align: center">
-											<img class="full-width-on-narrow" src="https://ejim.li/azem/template/images/image-300-300.jpg"
+											<img class="full-width-on-narrow"
+												src="https://ejim.li/azem/template/images/image-300-300.jpg"
 												width="300" height="300" alt="alt_text" border="0"
 												style="width: 100%; max-width: 300px; height: auto; background: #161D26; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 1px; color: #ffffff; display:block">
 										</td>
@@ -897,19 +919,20 @@
 								</table>
 							</th>
 							<!-- Column : END -->
-							 							<!-- Column : BEGIN -->
+							<!-- Column : BEGIN -->
 							<th valign="center" width="50%" class="stack-column-center">
 								<table role="presentation" cellspacing="0" cellpadding="0" border="0"
 									width="100%">
 									<tr>
-										<td style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 20px; color: #ffffff; padding: 0 10px 10px; text-align: center;"
+										<td dir="ltr" style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 20px; color: #ffffff; padding: 0 10px 10px; text-align: center;"
 											class="center-on-narrow">
 											<h2
 												style="margin: 50px 20px 18px 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 32px; line-height: 28px; color: #fff; font-weight: bold;">
 												Customize&nbsp;this email&nbsp;template!</h2>
 
 											<p style="margin: 0px 48px 50px 48px; text-align: center;">Lorem
-												googoo ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												googoo ipsum dolor sit amet, consectetur adipiscing elit.
+											</p>
 										</td>
 									</tr>
 								</table>
@@ -1337,7 +1360,7 @@
 					<p style="margin: 25px 0px 20px 0px;"><span class="unstyle-auto-detected-links">123 Fake
 							Street,<br>SpringField, OR, 97477 US<br>(123) 456-7890</span></p>
 					<p style="margin: 0px 0px 20px 0px; text-align: center; font-size: 14px; line-height: 16px;">
-						<unsubscribe style="color: #0F141A; text-decoration: underline;">Unsubscribe</unsubscribe>
+						<unsubscribe style="color: #0F141A; text-decoration: underline;" class="darkmode-text">Unsubscribe</unsubscribe>
 					</p>
 					<p style="margin: 0px 0px 190px 0px; text-align: center; font-size: 14px; line-height: 16px; display: none;"
 						class="only-show-darkmode">
@@ -1350,7 +1373,8 @@
 					<p style="margin: 0px 0px 190px 0px; text-align: center; font-size: 14px; line-height: 16px;">
 						<img src="https://ejim.li/azem/template/images/header-logo-bwp-black.png" width="120"
 							height="29" alt="" border="0"
-							style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 29px; line-height: 29px; color: #0F141A; max-width: 120px; display: block; margin: auto" class="darkmode-bg">
+							style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 29px; line-height: 29px; color: #0F141A; max-width: 120px; display: block; margin: auto"
+							class="darkmode-bg">
 					</p>
 
 				</td>
