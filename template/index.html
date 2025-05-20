@@ -11,7 +11,8 @@
 	<!-- Tell iOS not to automatically link certain text strings. -->
 	<meta name="color-scheme" content="light dark">
 	<meta name="supported-color-schemes" content="light dark">
-	<title>New Email from Amazon Buy with Prime</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+	<title>New Email from Amazon Buy with Prime</title>
+	<!-- The title tag shows in email notifications, like Android 4.4. -->
 
 	<!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
 	<!--[if gte mso 9]>
@@ -183,6 +184,51 @@
 			background: #FEE872 !important;
 			border-color: #FEE872 !important;
 		}
+
+		.button-td-blue,
+		.button-a-blue {
+			background: #0578FF !important;
+			border-color: #0578FF !important;
+			color: #ffffff !important;
+
+		}
+
+		.button-td-blue:hover,
+		.button-a-blue:hover {
+			background: #161D26 !important;
+			border-color: #161D26 !important;
+			color: #ffffff !important;
+		}
+
+
+
+		.button-td-secondary,
+		.button-a-secondary {
+			background: #ffffff !important;
+			border-color: #0F141A !important;
+			color: #0F141A !important;
+			box-shadow: 0px 2px 10px 0px #ffffff !important;
+
+		}
+
+
+		.button-td-secondary:hover,
+		.button-a-secondary:hover {
+			color: #0F141A !important;
+			background: #F5F3EF !important;
+			border-color: #0F141A !important;
+			box-shadow: 0px 2px 10px 0px #cccccc !important
+		}
+
+
+		.button-td-tertiary,
+		.button-a-tertiary {
+			background: #ffffff !important;
+			border-color: #ffffff !important;
+			border-radius: 0px !important;
+		}
+
+
 		.button-td-tertiary:hover,
 		.button-a-tertiary:hover {
 			color: #0578FF !important;
@@ -191,7 +237,7 @@
 
 		/* Media Queries */
 		@media screen and (max-width: 600px) {
-
+			.footer,
 			.email-container {
 				width: 100% !important;
 				margin: auto !important;
@@ -211,6 +257,11 @@
 				text-align: center !important;
 			}
 
+
+			.stack-column-subsequent {
+				padding-top: 24px !important;
+			}
+
 			/* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
 			.center-on-narrow {
 				text-align: center !important;
@@ -223,21 +274,37 @@
 			table.center-on-narrow {
 				display: inline-block !important;
 			}
-
+			.hide-on-narrow {
+				opacity: 0 !important;
+			}
 			/* What it does: Adjust typography on small screens to improve readability */
 			.email-container p {
 				font-size: 17px !important;
 			}
+
+			/* What it does: Ensures Images fill the full width of their container */
+			img.full-width-on-narrow {
+				width: 100% !important;
+				max-width: 100% !important;
+				height: auto !important;
+			}
+
+
+
 		}
 
-		/* Dark Mode Styles : BEGIN 
+		/* Dark Mode Styles : BEGIN  */
 		@media (prefers-color-scheme: dark) {
 			.email-bg {
-				background: #111111 !important;
+				background: #000000 !important;
 			}
 
 			.darkmode-bg {
 				background: #0F141A !important;
+			}
+
+			.darkmode-bg-white {
+				background: #ffffff !important;
 			}
 
 			h1,
@@ -250,27 +317,60 @@
 				color: #F7F7F9 !important;
 			}
 
+			.already-white-darkmode-text {
+				color: #ffffff !important;
+			}
+
+
 			td.button-td-primary,
 			td.button-td-primary a {
 				background: #ffffff !important;
-				border-color: #1a98ff !important;
+				border-color: #0F141A !important;
+				color: #0F141A !important;
 			}
 
 			td.button-td-primary:hover,
 			td.button-td-primary a:hover {
-				color: #1a5fff !important;
-				border-color: #1a5fff !important;
+				background: #F5F3EF !important;
+				color: #0F141A !important;
+				border-color: #0F141A !important;
+
+			}
+
+			.button-td-secondary,
+			.button-a-secondary {
+				box-shadow: 0px 2px 10px 0px #0F141A !important;
+
+			}
+
+
+
+
+
+			.button-td-tertiary,
+			.button-a-tertiary,
+			.button-td-tertiary:hover,
+			.button-a-tertiary:hover {
+				background: #0F141A !important;
+				border-color: #0F141A !important;
+				color: #ffffff !important;
+				border-radius: 0px !important;
 			}
 
 			.footer td {
-				color: #aaaaaa !important;
+				color: #ffffff !important;
+				background: #0F141A !important;
 			}
 
 			.darkmode-fullbleed-bg {
 				background-color: #0F3016 !important;
 			}
+
+			.only-show-darkmode {
+				display: unset !important;
+			}
 		}
-*/
+
 		/* Dark Mode Styles : END */
 	</style>
 	<!-- Progressive Enhancements : END -->
@@ -317,7 +417,7 @@
 			<tr>
 				<!-- Bulletproof Background Images c/o https://backgrounds.cm -->
 				<td valign="top"
-					style="text-align: center; background-image: url('https://ejim.li/azem/template/images/header-photo-sm.jpg'); background-position: center center !important; background-size: cover !important; height: 640px; min-height: 640px; max-height: 640px;">
+					style="text-align: center; background-image: url('https://ejim.li/azem/template/images/header-photo-sm.png'); background-position: center center !important; background-size: cover !important; height: 640px; min-height: 640px; max-height: 640px;">
 					<!--[if gte mso 9]>
 	                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:640px; background-position: center center !important;">
 	                <v:fill type="tile" src="https://ejim.li/azem/template/images/header-photo-sm.jpg" color="#0F141A" />
@@ -327,7 +427,7 @@
 						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 							<!-- Hero Logo Columns: BEGIN -->
 							<tr>
-								<td style="padding: 10px;">
+								<td style="padding: 0px;">
 									<table role="presentation" cellspacing="0" cellpadding="0" border="0"
 										width="100%">
 										<tr>
@@ -336,11 +436,11 @@
 												<table role="presentation" cellspacing="0" cellpadding="0"
 													border="0" width="100%">
 													<tr>
-														<td style="padding: 30px; text-align: left">
+														<td style="padding: 30px 0px; text-align: left" class="stack-column center-on-narrow">
 															<img src="https://ejim.li/azem/template/images/header-logo-bwp-white.png"
 																width="132" height="32" alt="alt_text"
 																border="0"
-																style="width: 132px; max-width: 132px; height: 32px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A;">
+																style="width: 132px; max-width: 132px; height: 32px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A; margin-left: 30px;">
 														</td>
 													</tr>
 												</table>
@@ -350,7 +450,8 @@
 											<th valign="top" width="50%" class="stack-column-center">
 												<!-- Button : BEGIN -->
 												<table align="center" role="presentation" cellspacing="0"
-													cellpadding="0" border="0" style="float: right; margin: 15px 30px 0px 30px !important;">
+													cellpadding="0" border="0" class="hide-on-narrow"
+													style="float: right; margin: 15px 30px 0px 30px !important;">
 													<tr>
 														<td class="button-td button-td-primary"
 															style="border-radius: 28px; background: #CBE7FF;">
@@ -400,10 +501,12 @@
 														<td dir="ltr" valign="top"
 															style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 21px; color: #ffffff; padding: 10px; text-align: left;"
 															class="center-on-narrow">
-															<h1
-																style="margin: 0 0 10px 0; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 48px; line-height: 43px; color: #fff; font-weight: bold;">
+															<h1 style="margin: 0 0 10px 0; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 48px; line-height: 43px; color: #fff; font-weight: bold;"
+																class="already-white-darkmode-text">
 																Add Your Headline Here</h1>
-															<p style="margin: 0 0 10px 0; letter-spacing: 0.75px;">Lorem ipsum
+															<p style="margin: 0 0 10px 0; letter-spacing: 0.75px;"
+																class="already-white-darkmode-text">
+																Lorem ipsum
 																dolor sit amet, consectetur adipiscing
 																elit. Elementum mattis nisi mauris
 																pharetra ullamcorper. </p>
@@ -446,14 +549,15 @@
 			<!-- Email Hero Image  : END -->
 			<!-- 1 Column Text + Button Centered: BEGIN -->
 			<tr>
-				<td style="background-color: #ffffff;">
-					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+				<td style="background-color: #ffffff;" class="darkmode-bg">
+					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; max-width: 520px;">
 						<tr>
 							<td align="center"
-								style="padding: 20px 80px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 21px; color: #0F141A; text-align: center;">
-								<h1
-									style="margin: 0 0 10px; font-size: 40px; line-height: 36px; color: #0F141A; font-weight: bold; text-align: center;">
-									Add your headline here.</h1>
+								style="padding: 20px 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 21px; color: #0F141A; text-align: center;"
+								class="darkmode-bg darkmode-text">
+								<h1 style="margin: 0 0 10px; font-size: 40px; line-height: 36px; color: #0F141A; font-weight: bold; text-align: center;"
+									class="darkmode-text">
+									Add your headline&nbsphere.</h1>
 								<p style="margin: 0 0 10px; text-align: center;">Lorem ipsum dolor sit amet,
 									consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
 									massa. Cim sociis natoque penatibus et magnis dis parturient montes,
@@ -467,9 +571,9 @@
 								<table align="center" role="presentation" cellspacing="0" cellpadding="0"
 									border="0" style="margin: auto;">
 									<tr>
-										<td class="button-td button-td-primary"
-											style="border-radius: 28px; background: #FED20D;">
-											<a class="button-a button-a-primary" href="https://google.com/"
+										<td class="button-td button-td-secondary
+											style=" border-radius: 28px; background: #FED20D;">
+											<a class="button-a button-a-secondary" href="https://google.com/"
 												style="background: #FED20D; border: 1px solid #FED20D; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 40px; color: #0F141A; display: block; border-radius: 28px;">Learn
 												More</a>
 										</td>
@@ -508,7 +612,13 @@
 										<td class="button-td button-td-primary"
 											style="border-radius: 28px; background: #FED20D;">
 											<a class="button-a button-a-primary" href="https://google.com/"
-												style="background: #FED20D; border: 1px solid #FED20D; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px 11px 40px; color: #0F141A; display: block; border-radius: 28px;"><span class="button-a-icon" style="font-size: 22px; line-height: 22px; display: block; float: right; margin: 0px 30px 0px 10px; border: none;"><img src="https://ejim.li/azem/template/images/icon-watch.png" width="22" height="22" alt="" border="0" style="height: auto; background: transparent; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 22px; color: #0F141A; max-width: 100%; display: block; margin: auto; border: none;"></span>Watch now</a>
+												style="background: #FED20D; border: 1px solid #FED20D; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px 11px 40px; color: #0F141A; display: block; border-radius: 28px;"><span
+													class="button-a-icon"
+													style="font-size: 22px; line-height: 22px; display: block; float: right; margin: 0px 30px 0px 10px; border: none;"><img
+														src="https://ejim.li/azem/template/images/icon-watch.png"
+														width="22" height="22" alt="" border="0"
+														style="height: auto; background: transparent; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 22px; color: #0F141A; max-width: 100%; display: block; margin: auto; border: none;"></span>Watch
+												now</a>
 										</td>
 									</tr>
 								</table>
@@ -517,7 +627,7 @@
 							</th>
 							<!-- Column : END -->
 							<!-- Column : BEGIN -->
-							<th valign="top" width="50%" class="stack-column-center">
+							<th valign="top" width="50%" class="stack-column-center stack-column-subsequent">
 								<table role="presentation" cellspacing="0" cellpadding="0" border="0"
 									width="100%">
 									<tr>
@@ -536,7 +646,13 @@
 										<td class="button-td button-td-primary"
 											style="border-radius: 28px; background: #FED20D;">
 											<a class="button-a button-a-primary" href="https://google.com/"
-												style="background: #FED20D; border: 1px solid #FED20D; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px 11px 40px; color: #0F141A; display: block; border-radius: 28px;"><span class="button-a-icon" style="font-size: 22px; line-height: 22px; display: block; float: right; margin: 0px 30px 0px 10px; border: none;"><img src="https://ejim.li/azem/template/images/icon-watch.png" width="22" height="22" alt="" border="0" style="height: auto; background: transparent; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 22px; color: #0F141A; max-width: 100%; display: block; margin: auto; border: none;"></span>Watch now</a>
+												style="background: #FED20D; border: 1px solid #FED20D; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px 11px 40px; color: #0F141A; display: block; border-radius: 28px;"><span
+													class="button-a-icon"
+													style="font-size: 22px; line-height: 22px; display: block; float: right; margin: 0px 30px 0px 10px; border: none;"><img
+														src="https://ejim.li/azem/template/images/icon-watch.png"
+														width="22" height="22" alt="" border="0"
+														style="height: auto; background: transparent; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 22px; color: #0F141A; max-width: 100%; display: block; margin: auto; border: none;"></span>Watch
+												now</a>
 										</td>
 									</tr>
 								</table>
@@ -551,15 +667,17 @@
 			<!-- 2 Even Columns : END -->
 			<!-- 1 Column Text + Button Centered: BEGIN -->
 			<tr>
-				<td style="background-color: #ffffff;">
-					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+				<td style="background-color: #ffffff;" class="darkmode-bg">
+					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; max-width: 520px;">
 						<tr>
 							<td align="center"
-								style="padding: 20px 80px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 21px; color: #0F141A; text-align: center;">
-								<h1
-									style="margin: 20px 0 10px; font-size: 40px; line-height: 36px; color: #0F141A; font-weight: bold; text-align: center;">
+								style="padding: 20px 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 21px; color: #0F141A; text-align: center;"
+								class="darkmode-bg darkmode-text">
+								<h1 style="margin: 20px 0 10px; font-size: 40px; line-height: 36px; color: #0F141A; font-weight: bold; text-align: center;"
+									class="darkmode-text">
 									Add your headline here.</h1>
-								<p style="margin: 0 0 10px; text-align: center;">Lorem ipsum dolor sit amet,
+								<p style="margin: 0 0 10px; text-align: center;" class="darkmode-text">Lorem
+									ipsum dolor sit amet,
 									consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
 									massa. Cim sociis natoque penatibus et magnis dis parturient montes,
 									nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
@@ -590,7 +708,8 @@
 			<!-- 1 Column Text + Button : END -->
 			<!-- White Spacer : BEGIN -->
 			<tr>
-				<td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px; background-color: #ffffff;">
+				<td aria-hidden="true" height="20"
+					style="font-size: 0px; line-height: 0px; background-color: #ffffff;" class="darkmode-bg">
 					&nbsp;
 				</td>
 			</tr>
@@ -598,22 +717,26 @@
 
 			<!-- Horizontal Rule : BEGIN -->
 			<tr>
-				<td aria-hidden="true" height="40" style="font-size: 1px; line-height: 1px; background-color: #ffffff;">
-					<div class="clear" style="width: 100%; max-width: 500px; clear: both; height: 1px; font-size: 1px; line-height: 1px; background-color: #232F3E; margin: auto;">&nbsp;</div>
+				<td aria-hidden="true" height="40"
+					style="font-size: 1px; line-height: 1px; background-color: #ffffff;" class="darkmode-bg">
+					<div class="clear darkmode-bg-white"
+						style="width: 100%; max-width: 500px; clear: both; height: 1px; font-size: 1px; line-height: 1px; background-color: #232F3E; margin: auto;">
+						&nbsp;</div>
 				</td>
 			</tr>
 			<!-- Horizontal Rule : END -->
 
 			<!-- White Spacer : BEGIN -->
 			<tr>
-				<td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px; background-color: #ffffff;">
+				<td aria-hidden="true" height="20"
+					style="font-size: 0px; line-height: 0px; background-color: #ffffff;" class="darkmode-bg">
 					&nbsp;
 				</td>
 			</tr>
 			<!-- White Spacer : END -->
 			<!-- Icon List Bulb : BEGIN -->
 			<tr>
-				<td style="background-color: #ffffff;">
+				<td style="background-color: #ffffff;" class="darkmode-bg">
 					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 						<!-- List Item : BEGIN -->
 						<tr>
@@ -621,13 +744,13 @@
 								style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 26px; font-weight: bold; line-height: 23px; color: #0F141A; padding: 0 10px 10px; text-align: center; width: 28%;"
 								class="center-on-narrow">
 								<img src="https://ejim.li/azem/template/images/icon-bulb.png" width="80"
-									height="80" alt="alt_text" border="0" class="center-on-narrow"
+									height="80" alt="alt_text" border="0" class="center-on-narrow darkmode-bg	"
 									style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A; max-width: 100%; display: block; margin: auto">
 							</td>
-							<td class="center-on-narrow"
+							<td class="center-on-narrow darkmode-bg darkmode-text"
 								style="border-radius: 28px; background-color: #ffffff; width: 84%; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 20px; color: #0F141A; padding: 0 10px 10px; text-align: left;">
 								<h2
-									style="margin: 4px 300px 10px 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 20px; font-weight: bold;">
+									style="margin: 4px 30px 10px 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 20px; font-weight: bold;">
 									Lorem ipsum</h2>
 
 								<p style="margin: 0px 30px 0px 0px; text-align: left;">Lorem ipsum dolor sit
@@ -637,11 +760,17 @@
 								<table align="left" role="presentation" cellspacing="0" cellpadding="0"
 									border="0" style="margin: auto;">
 									<tr>
-										<td class="button-td button-td-tertiary"
+										<td class="button-td button-td-tertiary "
 											style="background: #ffffff;">
 											<a class="button-a button-a-tertiary button-a-no-border button-a-has-icon"
 												href="https://google.com/"
-												style="background: #ffffff; border: 1px solid #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px; color: #0F141A; display: block; max-width: 160px;"> <span class="button-a-icon" style="font-size: 11px; line-height: 22px; display: block; float: right; margin: 1px 10px 0px 10px;">&#9654;</span>Learn More</a>
+												style="background: #ffffff; border: 1px solid #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px 11px 0px; color: #0F141A; display: block; max-width: 160px;">
+												<span class="button-a-icon"
+													style="font-size: 22px; line-height: 22px; display: block; float: right; margin: 5px 30px 0px 10px; border: none;"><img
+														src="https://ejim.li/azem/template/images/icon-arrow-right.png"
+														width="9" height="11" alt="" border="0"
+														style="height: auto; background: transparent; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 22px; color: #0F141A; max-width: 100%; display: block; margin: auto; border: none;"></span>Learn
+												More</a>
 										</td>
 									</tr>
 								</table>
@@ -654,15 +783,16 @@
 						<tr>
 							<td align="center" valign="top"
 								style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 26px; font-weight: bold; line-height: 23px; color: #0F141A; padding: 0 10px 10px; text-align: center; width: 28%;"
-								class="center-on-narrow">
+								class="center-on-narrow stack-column-subsequent darkmode-bg darkmode-text">
 								<img src="https://ejim.li/azem/template/images/icon-bulb.png" width="80"
-									height="80" alt="alt_text" border="0" class="center-on-narrow"
+									height="80" alt="alt_text" border="0"
+									class="center-on-narrow darkmode-bg darkmode-text"
 									style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A; max-width: 100%; display: block; margin: auto">
 							</td>
-							<td class="center-on-narrow"
+							<td class="center-on-narrow darkmode-bg darkmode-text"
 								style="border-radius: 28px; background-color: #ffffff; width: 84%; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 20px; color: #0F141A; padding: 0 10px 10px; text-align: left;">
 								<h2
-									style="margin: 4px 300px 10px 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 20px; font-weight: bold;">
+									style="margin: 4px 30px 10px 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 20px; font-weight: bold;">
 									Lorem ipsum</h2>
 
 								<p style="margin: 0px 30px 0px 0px; text-align: left;">Lorem ipsum dolor sit
@@ -676,7 +806,13 @@
 											style="border-radius: 28px; background: #ffffff;">
 											<a class="button-a button-a-tertiary button-a-no-border button-a-has-icon"
 												href="https://google.com/"
-												style="background: #ffffff; border: 1px solid #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px; color: #0F141A; display: block; max-width: 160px;"> <span class="button-a-icon" style="font-size: 11px; line-height: 22px; display: block; float: right; margin: 1px 10px 0px 10px;">&#9654;</span>Learn More</a>
+												style="background: #ffffff; border: 1px solid #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; text-decoration: none; padding: 11px 0px 11px 0px; color: #0F141A; display: block; max-width: 160px;">
+												<span class="button-a-icon"
+													style="font-size: 22px; line-height: 22px; display: block; float: right; margin: 5px 30px 0px 10px; border: none;"><img
+														src="https://ejim.li/azem/template/images/icon-arrow-right.png"
+														width="9" height="11" alt="" border="0"
+														style="height: auto; background: transparent; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 22px; line-height: 22px; color: #0F141A; max-width: 100%; display: block; margin: auto; border: none;"></span>Learn
+												More</a>
 										</td>
 									</tr>
 								</table>
@@ -692,7 +828,8 @@
 			<!-- Icon List Bulb : END -->
 			<!-- White Spacer : BEGIN -->
 			<tr>
-				<td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px; background-color: #ffffff;">
+				<td aria-hidden="true" height="20"
+					style="font-size: 0px; line-height: 0px; background-color: #ffffff;" class="darkmode-bg">
 					&nbsp;
 				</td>
 			</tr>
@@ -708,7 +845,8 @@
 									width="100%">
 									<tr>
 										<td style="padding: 0px; text-align: center">
-											<img src="https://ejim.li/azem/template/images/image-300-300.jpg"
+											<img class="full-width-on-narrow"
+												src="https://ejim.li/azem/template/images/image-300-300.jpg"
 												width="300" height="300" alt="alt_text" border="0"
 												style="width: 100%; max-width: 300px; height: auto; background: #0571ED; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 1px; color: #ffffff; display:block">
 										</td>
@@ -722,9 +860,9 @@
 									width="100%">
 									<tr>
 										<td style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 20px; color: #ffffff; padding: 0 10px 10px; text-align: center;"
-											class="center-on-narrow">
-											<h2
-												style="margin: 50px 20px 18px 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 32px; line-height: 28px; color: #fff; font-weight: bold;">
+											class="center-on-narrow already-white-darkmode-text">
+											<h2 style="margin: 50px 20px 18px 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 32px; line-height: 28px; color: #fff; font-weight: bold;"
+												class="already-white-darkmode-text">
 												Customize&nbsp;this email&nbsp;template!</h2>
 
 											<p style="margin: 0px 48px 50px 48px; text-align: center;">Lorem
@@ -741,10 +879,25 @@
 			<!-- 2 Even Columns : END -->
 			<!-- 2 Even Columns : BEGIN -->
 			<tr>
-				<td style="padding: 0px; background-color: #161D26;">
+				<td dir="rtl" style="padding: 0px; background-color: #161D26;">
 					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 						<tr>
+
 							<!-- Column : BEGIN -->
+							<th valign="top" width="50%" class="stack-column-center">
+								<table role="presentation" cellspacing="0" cellpadding="0" border="0"
+									width="100%">
+									<tr>
+										<td style="padding: 0px; text-align: center">
+											<img class="full-width-on-narrow" src="https://ejim.li/azem/template/images/image-300-300.jpg"
+												width="300" height="300" alt="alt_text" border="0"
+												style="width: 100%; max-width: 300px; height: auto; background: #161D26; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 1px; color: #ffffff; display:block">
+										</td>
+									</tr>
+								</table>
+							</th>
+							<!-- Column : END -->
+							 							<!-- Column : BEGIN -->
 							<th valign="center" width="50%" class="stack-column-center">
 								<table role="presentation" cellspacing="0" cellpadding="0" border="0"
 									width="100%">
@@ -756,27 +909,13 @@
 												Customize&nbsp;this email&nbsp;template!</h2>
 
 											<p style="margin: 0px 48px 50px 48px; text-align: center;">Lorem
-												ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												googoo ipsum dolor sit amet, consectetur adipiscing elit.</p>
 										</td>
 									</tr>
 								</table>
 							</th>
 							<!-- Column : END -->
 
-							<!-- Column : BEGIN -->
-							<th valign="top" width="50%" class="stack-column-center">
-								<table role="presentation" cellspacing="0" cellpadding="0" border="0"
-									width="100%">
-									<tr>
-										<td style="padding: 0px; text-align: center">
-											<img src="https://ejim.li/azem/template/images/image-300-300.jpg"
-												width="300" height="300" alt="alt_text" border="0"
-												style="width: 100%; max-width: 300px; height: auto; background: #161D26; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 1px; color: #ffffff; display:block">
-										</td>
-									</tr>
-								</table>
-							</th>
-							<!-- Column : END -->
 						</tr>
 					</table>
 				</td>
@@ -855,13 +994,14 @@
 									<tr>
 										<td style="padding: 10px; text-align: center">
 											<img src="https://ejim.li/azem/template/images/image-250-250.jpg"
-												width="250" height="" alt="alt_text" border="0"
+												class="full-width-on-narrow" width="250" height=""
+												alt="alt_text" border="0"
 												style="width: 100%; max-width: 250px; height: auto; background: #0571ED; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #ffffff;">
 										</td>
 									</tr>
 									<tr>
 										<td style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #ffffff; padding: 0 10px 10px; text-align: left;"
-											class="center-on-narrow">
+											class="center-on-narrow already-white-darkmode-text">
 											<p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo
 												id, eleifend dolor. Class aptent taciti sociosqu ad litora
 												torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -871,19 +1011,20 @@
 							</th>
 							<!-- Column : END -->
 							<!-- Column : BEGIN -->
-							<th valign="top" width="50%" class="stack-column-center">
+							<th valign="top" width="50%" class="stack-column-center stack-column-subsequent">
 								<table role="presentation" cellspacing="0" cellpadding="0" border="0"
 									width="100%">
 									<tr>
 										<td style="padding: 10px; text-align: center">
 											<img src="https://ejim.li/azem/template/images/image-250-250.jpg"
-												width="250" height="" alt="alt_text" border="0"
+												class="full-width-on-narrow" width="250" height=""
+												alt="alt_text" border="0"
 												style="width: 100%; max-width: 250px; height: auto; background: #0571ED; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #ffffff;">
 										</td>
 									</tr>
 									<tr>
 										<td style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #ffffff; padding: 0 10px 10px; text-align: left;"
-											class="center-on-narrow">
+											class="center-on-narrow already-white-darkmode-text">
 											<p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo
 												id, eleifend dolor. Class aptent taciti sociosqu ad litora
 												torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -900,8 +1041,9 @@
 
 			<!-- Hero Image, Flush : BEGIN -->
 			<tr>
-				<td style="background-color: #ffffff;">
-					<img src="https://ejim.li/azem/template/images/image-600-320.jpg" width="600" height="320" alt="alt_text" border="0"
+				<td style="background-color: #ffffff;" class="darkmode-bg">
+					<img src="https://ejim.li/azem/template/images/image-600-320.jpg" width="600" height="320"
+						alt="alt_text" border="0"
 						style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A; margin: 0px 0px 40px 0px; display: block;"
 						class="g-img">
 				</td>
@@ -910,7 +1052,7 @@
 
 			<!-- 3 Even Columns : BEGIN -->
 			<tr>
-				<td style="padding: 10px; background-color: #ffffff;">
+				<td style="padding: 10px; background-color: #ffffff;" class="darkmode-bg">
 					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 						<tr>
 							<!-- Column : BEGIN -->
@@ -921,12 +1063,13 @@
 										<td style="padding: 10px; text-align: center">
 											<img src="https://ejim.li/azem/template/images/image-170-170.jpg"
 												width="170" height="" alt="alt_text" border="0"
-												style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A;">
+												style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A;"
+												class="darkmode-text darkmode-bg">
 										</td>
 									</tr>
 									<tr>
 										<td style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #0F141A; padding: 0 10px 10px; text-align: left;"
-											class="center-on-narrow">
+											class="center-on-narrow darkmode-text darkmode-bg">
 											<p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo
 												id, eleifend dolor. Class aptent taciti sociosqu ad litora
 												torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -943,12 +1086,13 @@
 										<td style="padding: 10px; text-align: center">
 											<img src="https://ejim.li/azem/template/images/image-170-170.jpg"
 												width="170" height="" alt="alt_text" border="0"
-												style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A;">
+												style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A;"
+												class="darkmode-text darkmode-bg">
 										</td>
 									</tr>
 									<tr>
 										<td style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #0F141A; padding: 0 10px 10px; text-align: left;"
-											class="center-on-narrow">
+											class="center-on-narrow darkmode-text darkmode-bg">
 											<p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo
 												id, eleifend dolor. Class aptent taciti sociosqu ad litora
 												torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -965,12 +1109,13 @@
 										<td style="padding: 10px; text-align: center">
 											<img src="https://ejim.li/azem/template/images/image-170-170.jpg"
 												width="170" height="" alt="alt_text" border="0"
-												style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A;">
+												style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #0F141A;"
+												class="darkmode-text darkmode-bg">
 										</td>
 									</tr>
 									<tr>
 										<td style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #0F141A; padding: 0 10px 10px; text-align: left;"
-											class="center-on-narrow">
+											class="center-on-narrow darkmode-text darkmode-bg">
 											<p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo
 												id, eleifend dolor. Class aptent taciti sociosqu ad litora
 												torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -986,7 +1131,7 @@
 			<!-- 3 Even Columns : END -->
 			<!-- Thumbnail Left, Text Right : BEGIN -->
 			<tr>
-				<td dir="ltr" width="89%" align="center"
+				<td dir="ltr" width="89%" align="center" class="darkmode-bg"
 					style="padding: 0px; background-color: #ffffff; margin: auto">
 					<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="92%">
 						<tr>
@@ -1013,9 +1158,9 @@
 									<tr>
 										<td dir="ltr" valign="top"
 											style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #0F141A; padding: 0px 40x 0px 10px; text-align: left;"
-											class="center-on-narrow">
-											<h2
-												style="margin: 0 0 10px 0; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; color: #0F141A; font-weight: bold;">
+											class="center-on-narrow darkmode-bg darkmode-text">
+											<h2 style="margin: 0 0 10px 0; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; color: #0F141A; font-weight: bold;"
+												class="darkmode-bg darkmode-text">
 												Customize this email template!</h2>
 											<p style="margin: 0 0 20px 0px;">Lorem ipsum dolor sit amet,
 												consectetur adipiscing elit. Elementum mattis nisi..</p>
@@ -1046,7 +1191,7 @@
 			<!-- Thumbnail Right, Text Left : BEGIN -->
 			<tr>
 				<td dir="rtl" width="89%" align="center"
-					style="padding: 0px; background-color: #ffffff; margin: auto">
+					style="padding: 0px; background-color: #ffffff; margin: auto" class="darkmode-bg">
 					<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="84%">
 						<tr>
 							<!-- Column : BEGIN -->
@@ -1072,11 +1217,12 @@
 									<tr>
 										<td dir="ltr" valign="top"
 											style="font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #0F141A; padding: 0px; text-align: left;"
-											class="center-on-narrow">
-											<h2
-												style="margin: 0 0 10px 0; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; color: #0F141A; font-weight: bold;">
+											class="center-on-narrow darkmode-bg darkmode-text">
+											<h2 style="margin: 0 0 10px 0; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 18px; line-height: 22px; color: #0F141A; font-weight: bold;"
+												class="darkmode-text">
 												Class aptent taciti sociosqu</h2>
-											<p style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque,
+											<p style="margin: 0 0 10px 0;" class="darkmode-text">Maecenas sed
+												ante pellentesque,
 												posuere leo id, eleifend dolor. Class aptent taciti sociosqu
 												ad litora torquent per conubia nostra, per inceptos
 												himenaeos.</p>
@@ -1106,11 +1252,11 @@
 			<!-- Thumbnail Right, Text Left : END -->
 			<!-- 1 Column Text : BEGIN -->
 			<tr>
-				<td style="background-color: #ffffff;">
+				<td style="background-color: #ffffff;" class="darkmode-bg">
 					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 						<tr>
-							<td
-								style="padding: 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #0F141A;">
+							<td style="padding: 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 20px; color: #0F141A;"
+								class="darkmode-text">
 								<p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend
 									dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
 									per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas
@@ -1132,7 +1278,9 @@
 			<tr>
 				<td
 					style="padding: 20px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 12px; line-height: 14px; text-align: center; color: #0F141A; background-color: #ffffff;">
-					<p style="margin: 0px 0px 4px 0px; font-size: 14px; line-height: 16px;">Amazon.com, Inc.</p>
+					<p style="margin: 0px 0px 4px 0px; font-size: 14px; line-height: 16px;"><a
+							href="https://amazon.com" style="color: #0F141A;"
+							class="darkmode-text">Amazon.com</a> Inc.</p>
 					<p style="margin: 0px 0px 25px 0px;">You are receiving this email because you opted in via our
 						website.</p>
 					<table role="presentation" cellspacing="50" cellpadding="0" border="0" width="280px"
@@ -1142,46 +1290,47 @@
 								style="padding: 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; text-align: center; color: #0F141A; background-color: #ffffff;">
 								<a href="https://google.com/"
 									style="color: #0F141A; font-size: 24px; line-height: 24px; text-decoration: none; padding: 0px; display: block;"><img
-										src="https://ejim.li/azem/template/images/social-twitter.png" width="24" height="24"
-										alt="Follow us on Twitter" border="0"
+										src="https://ejim.li/azem/template/images/social-twitter.png"
+										width="24" height="24" alt="Follow us on Twitter" border="0"
 										style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; color: #0F141A; max-width: 100%; display: block; margin: auto"></a>
 							</td>
 							<td
 								style="padding: 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; text-align: center; color: #0F141A; background-color: #ffffff;">
 								<a href="https://google.com/"
 									style="color: #0F141A; font-size: 24px; line-height: 24px; text-decoration: none; padding: 0px; display: block;"><img
-										src="https://ejim.li/azem/template/images/social-insta.png" width="24" height="24"
-										alt="Follow us on Twitter" border="0"
+										src="https://ejim.li/azem/template/images/social-insta.png" width="24"
+										height="24" alt="Follow us on Twitter" border="0"
 										style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; color: #0F141A; max-width: 100%; display: block; margin: auto"></a>
 							</td>
 							<td
 								style="padding: 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; text-align: center; color: #0F141A; background-color: #ffffff;">
 								<a href="https://google.com/"
 									style="color: #0F141A; font-size: 24px; line-height: 24px; text-decoration: none; padding: 0px; display: block;"><img
-										src="https://ejim.li/azem/template/images/social-youtube.png" width="24" height="24"
-										alt="Follow us on Twitter" border="0"
+										src="https://ejim.li/azem/template/images/social-youtube.png"
+										width="24" height="24" alt="Follow us on Twitter" border="0"
 										style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; color: #0F141A; max-width: 100%; display: block; margin: auto"></a>
 							</td>
 							<td
 								style="padding: 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; text-align: center; color: #0F141A; background-color: #ffffff;">
 								<a href="https://google.com/"
 									style="color: #0F141A; font-size: 24px; line-height: 24px; text-decoration: none; padding: 0px; display: block;"><img
-										src="https://ejim.li/azem/template/images/social-dribble.png" width="24" height="24"
-										alt="Follow us on Twitter" border="0"
+										src="https://ejim.li/azem/template/images/social-dribble.png"
+										width="24" height="24" alt="Follow us on Twitter" border="0"
 										style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; color: #0F141A; max-width: 100%; display: block; margin: auto"></a>
 							</td>
 							<td
 								style="padding: 0px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; text-align: center; color: #0F141A; background-color: #ffffff;">
 								<a href="https://google.com/"
 									style="color: #0F141A; font-size: 24px; line-height: 24px; text-decoration: none; padding: 0px; display: block;"><img
-										src="https://ejim.li/azem/template/images/social-linkedin.png" width="24" height="24"
-										alt="Follow us on Twitter" border="0"
+										src="https://ejim.li/azem/template/images/social-linkedin.png"
+										width="24" height="24" alt="Follow us on Twitter" border="0"
 										style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 24px; line-height: 24px; color: #0F141A; max-width: 100%; display: block; margin: auto"></a>
 							</td>
 						</tr>
 					</table>
 					<p style="margin: 12px 0px 20px 0px; text-align: center; font-size: 14px; line-height: 16px;">
-						<webversion style="color: #0F141A; text-decoration: underline;">View as a
+						<webversion style="color: #0F141A; text-decoration: underline;" class="darkmode-text">View
+							as a
 							Web Page</webversion>
 					</p>
 
@@ -1190,9 +1339,18 @@
 					<p style="margin: 0px 0px 20px 0px; text-align: center; font-size: 14px; line-height: 16px;">
 						<unsubscribe style="color: #0F141A; text-decoration: underline;">Unsubscribe</unsubscribe>
 					</p>
+					<p style="margin: 0px 0px 190px 0px; text-align: center; font-size: 14px; line-height: 16px; display: none;"
+						class="only-show-darkmode">
+						<img src="https://ejim.li/azem/template/images/header-logo-bwp-white.png" width="120"
+							height="29" alt="alt_text" border="0"
+							style="width: 120px; max-width: 120px; height: 29px; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 15px; line-height: 15px; color: #ffffff;">
+					</p>
+
+
 					<p style="margin: 0px 0px 190px 0px; text-align: center; font-size: 14px; line-height: 16px;">
-						<img src="https://ejim.li/azem/template/images/header-logo-bwp-black.png" width="120" height="29" alt="" border="0"
-							style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 29px; line-height: 29px; color: #0F141A; max-width: 120px; display: block; margin: auto">
+						<img src="https://ejim.li/azem/template/images/header-logo-bwp-black.png" width="120"
+							height="29" alt="" border="0"
+							style="height: auto; background: #ffffff; font-family: 'Ember Modern Display Standard', sans-serif; font-size: 29px; line-height: 29px; color: #0F141A; max-width: 120px; display: block; margin: auto" class="darkmode-bg">
 					</p>
 
 				</td>
